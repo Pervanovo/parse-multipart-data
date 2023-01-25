@@ -1,8 +1,7 @@
 {
   "name": "parse-multipart-data",
   "version": "0.0.0-development",
-  "description":
-    "A javascript/nodejs multipart/form-data parser which operates on raw data.",
+  "description": "A javascript/nodejs multipart/form-data parser which operates on raw data.",
   "main": "dist/multipart.js",
   "author": "Ignacio Mazzara (nachomazzara@gmail.com)",
   "license": "MIT",
@@ -14,9 +13,15 @@
   },
   "nyc": {
     "all": true,
-    "include": ["src"],
-    "extension": [".ts"],
-    "reporter": ["text-summary"],
+    "include": [
+      "src"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "text-summary"
+    ],
     "sourceMap": true,
     "instrument": true
   },
@@ -24,12 +29,17 @@
     "type": "git",
     "url": "https://github.com/nachomazzara/parse-multipart-data.git"
   },
-  "keywords": ["multipart/form-data", "form", "fileuploader"],
+  "keywords": [
+    "multipart/form-data",
+    "form",
+    "fileuploader"
+  ],
   "bugs": {
     "url": "https://github.com/nachomazzara/parse-multipart-data/issues"
   },
   "homepage": "https://github.com/nachomazzara/parse-multipart-data#readme",
   "dependencies": {
+    "buffer": "^6.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",

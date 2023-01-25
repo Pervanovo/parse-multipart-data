@@ -11,6 +11,7 @@
  *  or { name: 'key', data: <Buffer 41 41 41 41 42 42 42 42> }
  */
 /// <reference types="node" />
+import { Buffer } from 'buffer';
 declare type Input = {
     filename?: string;
     name?: string;

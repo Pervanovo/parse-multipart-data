@@ -13,6 +13,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DemoData = exports.getBoundary = exports.parse = exports.BufferToString = void 0;
+var buffer_1 = require("buffer");
 var ParsingState;
 (function (ParsingState) {
     ParsingState[ParsingState["INIT"] = 0] = "INIT";
@@ -156,7 +157,7 @@ function DemoData() {
     // End
     body += '------WebKitFormBoundaryvef1fLxmoUdYZWXp--\r\n';
     return {
-        body: Buffer.from(body),
+        body: buffer_1.Buffer.from(body),
         boundary: boundary
     };
 }
@@ -202,7 +203,7 @@ function process(part) {
         configurable: true
     });
     Object.defineProperty(input, 'data', {
-        value: Buffer.from(part.part),
+        value: buffer_1.Buffer.from(part.part),
         writable: true,
         enumerable: true,
         configurable: true

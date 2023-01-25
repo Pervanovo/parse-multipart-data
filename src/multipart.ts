@@ -11,6 +11,8 @@
  *  or { name: 'key', data: <Buffer 41 41 41 41 42 42 42 42> }
  */
 
+import { Buffer } from 'buffer'
+
 type Part = {
   contentDispositionHeader: string
   contentTypeHeader: string
